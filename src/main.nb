@@ -1,0 +1,71 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1955,         63]
+NotebookOptionsPosition[      1640,         48]
+NotebookOutlinePosition[      1995,         64]
+CellTagsIndexPosition[      1952,         61]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/Ttau.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/EiT.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/EmarT.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/MarSeq.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/EsysT.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/lamk.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/AlphaSeq.mx\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DumpGet", "[", 
+  "\"\<ownCloud/EMORY/flies/longfly/scripts/rpath.mx\>\"", "]"}]}], "Input",
+ CellChangeTimes->{{3.711735869297666*^9, 
+  3.7117359475635357`*^9}},ExpressionUUID->"b7ad23ad-d900-4663-bdd6-\
+57353c868ba1"]
+},
+WindowSize->{808, 606},
+WindowMargins->{{12, Automatic}, {Automatic, 24}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1078, 26, 180, "Input", "ExpressionUUID" -> \
+"b7ad23ad-d900-4663-bdd6-57353c868ba1"]
+}
+]
+*)
+
