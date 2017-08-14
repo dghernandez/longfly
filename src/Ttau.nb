@@ -1,0 +1,133 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3939,        123]
+NotebookOptionsPosition[      3625,        108]
+NotebookOutlinePosition[      3979,        124]
+CellTagsIndexPosition[      3936,        121]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Ttau", "[", 
+    RowBox[{"tra_", ",", "tau_", ",", 
+     RowBox[{"Nb_:", "117"}], ",", " ", 
+     RowBox[{"beta_:", "0.01"}]}], "]"}], ":=", 
+   RowBox[{"Block", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Tt", "=", 
+       RowBox[{"ConstantArray", "[", 
+        RowBox[{"(*", "0.", "*)"}], 
+        RowBox[{"beta", ",", 
+         RowBox[{"{", 
+          RowBox[{"Nb", ",", "Nb"}], "}"}]}], "]"}]}], 
+      RowBox[{"(*", 
+       RowBox[{",", 
+        RowBox[{"cc", "=", 
+         RowBox[{"ConstantArray", "[", 
+          RowBox[{"0.", ",", "Nf"}], "]"}]}]}], "*)"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Do", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"Tt", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{"tra", "[", 
+               RowBox[{"[", 
+                RowBox[{"i", "+", "tau"}], "]"}], "]"}], ",", 
+              RowBox[{"tra", "[", 
+               RowBox[{"[", "i", "]"}], "]"}]}], "]"}], "]"}], "+=", "1."}], 
+          ";"}], "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"cc", "[", 
+             RowBox[{"[", 
+              RowBox[{"tra", "[", 
+               RowBox[{"[", "i", "]"}], "]"}], "]"}], "]"}], "+=", "1."}], 
+           ";"}], "*)"}], "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"i", ",", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"Length", " ", "@", "tra"}], ")"}], "-", "tau"}]}], 
+          "}"}]}], "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"Total", " ", "@", " ", 
+               RowBox[{"Tt", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "j"}], "]"}], "]"}]}], ")"}], 
+             "\[NotEqual]", " ", "0"}], ",", 
+            RowBox[{
+             RowBox[{"Tt", "[", 
+              RowBox[{"[", 
+               RowBox[{"All", ",", "j"}], "]"}], "]"}], "/=", " ", 
+             RowBox[{"(", 
+              RowBox[{"Total", " ", "@", " ", 
+               RowBox[{"Tt", "[", 
+                RowBox[{"[", 
+                 RowBox[{"All", ",", "j"}], "]"}], "]"}]}], ")"}]}]}], "]"}], 
+          ";"}], "\[IndentingNewLine]", ",", 
+         RowBox[{"{", 
+          RowBox[{"j", ",", "Nb"}], "}"}]}], "]"}], ";"}], 
+      "\[IndentingNewLine]", ";", "Tt"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+    "calculates", " ", "the", " ", "transition", " ", "matrix", " ", "for", 
+     " ", "a", " ", "trajectory"}], ",", " ", 
+    RowBox[{"after", " ", "tau", " ", "steps"}]}], "*)"}]}]}], "Input",
+ CellChangeTimes->{{3.711733912467691*^9, 
+  3.711733947432557*^9}},ExpressionUUID->"eb604fe2-7cc0-465e-b256-\
+199373afae1b"]
+},
+WindowSize->{808, 606},
+WindowMargins->{{Automatic, 12}, {Automatic, 3}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 3063, 86, 285, "Input", "ExpressionUUID" -> \
+"eb604fe2-7cc0-465e-b256-199373afae1b"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
